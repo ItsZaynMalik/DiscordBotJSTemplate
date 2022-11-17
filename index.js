@@ -1,6 +1,6 @@
 require('dotenv').config();
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client({ intents: [Guilds,GuildMembers,GuildMessages,MessageContent] });
 
 client.commands = new Discord.Collection();
 client.events = new Discord.Collection();
